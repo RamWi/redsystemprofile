@@ -2,8 +2,10 @@
 
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from "./components/Navbar"
 import Header from './components/Header'
+import HeroLand from './components/HeroLand'
+import ServiceSection from './components/ServiceSection'
+import OurProductLand from './components/OurProductLand'
 
 
 function App() {
@@ -17,9 +19,11 @@ function App() {
 
 
 
-      <main className="-mt-22 h-[1000px] flex justify-center items-center text-gray-600 bg-amber-200">
-        <h1 className='text-red-600'>Build Here</h1>
-        <p className="text-gray-500">Page content will go here...</p>
+      <main className="-mt-22">
+        <HeroLand />
+        <ServiceSection />
+        <OurProductLand />
+        
       </main>
 
     </>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Navbar(){
 
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);    
 
     return(
         <>
@@ -19,7 +19,7 @@ function Navbar(){
                     onMouseLeave={() => setIsDropdownOpen(false)}
                 >
                 {/* Main Services Link */}
-                <a href="#services" className="link-nav flex items-center gap-1">
+                <a href="#services" className="link-nav flex justify-center items-center gap-1">
                     Services
                     <svg xmlns="http://www.w3.org/2000/svg"
                         className={`h-4 w-4 transition-transform duration-300 ${
@@ -54,30 +54,30 @@ function Navbar(){
 
                         <a
                             href="#web"
-                            className="block px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="block flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
-                            Web Development
+                            Website Development
                         </a>
                     
                         <a
                             href="#mobile"
-                            className="block px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="block flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
-                            Mobile Apps
+                            Mobile Apps Development
                         </a>
                     
                         <a
                             href="#uiux"
-                            className="block px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="block flex items-center h-15 px-4 py-2  hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
-                            UI / UX Design
+                            ERP Develpoment
                         </a>
 
                         <a
                             href="#uiux"
-                            className="block px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="block flex items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
-                            ITnbln
+                            IT Consultation
                         </a>
                         
                     </div>

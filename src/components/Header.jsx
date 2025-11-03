@@ -12,6 +12,7 @@ function Header(){
       // Track whether the user has scrolled down
     const [isScrolled, setIsScrolled] = useState(false);
 
+
     // useEffect runs once when the component loads
     useEffect(() => {
         // Function to check scroll position
