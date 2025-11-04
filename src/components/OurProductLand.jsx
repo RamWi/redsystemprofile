@@ -69,15 +69,12 @@ const OurProducts = () => {
     }, []);
 
     return (
-        <section className="w-full bg-white py-20 overflow-hidden">
+        <section className="w-full py-20 overflow-hidden bg-gradient-to-r from-[#0B141A] via-[#111827] to-[#111111] opacity-80">
             {/* Title */}
             <div className="text-center mb-10">
-                <h2 className="text-4xl md:text-5xl font-bold">
-                    Our <span className="text-red-500">Products</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                    OUR <span className="text-red-500">PRODUCTS</span>
                 </h2>
-                <p className="text-gray-600 mt-3 text-lg">
-                    Explore our latest AI-powered tools for smarter web creation.
-                </p>
             </div>
 
             {/* Scroll Snap Container */}
@@ -88,7 +85,7 @@ const OurProducts = () => {
                 {products.map((item) => (
                     <div
                         key={item.id}
-                        className="w-full flex-shrink-0 snap-center flex flex-col md:flex-row items-center justify-center px-8 md:px-24 py-12 gap-10"
+                        className="w-full shrink-0 snap-center flex flex-col md:flex-row items-center justify-center px-8 md:px-24 py-12 gap-10"
                     >
                         {/* Image */}
                         <div className="w-full md:w-1/2">
@@ -104,7 +101,7 @@ const OurProducts = () => {
                             <h3 className="text-2xl md:text-3xl font-bold mb-4">
                                 {item.title}
                             </h3>
-                            <img src={item.logo} alt={item.logo} />
+                            <img src={item.logo} alt={item.logo} className="h-20 object-contain items-start" />
                             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                                 {item.desc}
                             </p>

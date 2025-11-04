@@ -40,7 +40,7 @@ function Navbar(){
 
                 {/* --- Dropdown Menu --- */}
                 {isDropdownOpen && (
-                    <div className={`absolute left-0 top-full mt-[20px] w-48 bg-[#0B141A]/95 backdrop-blur-md rounded-md shadow-lg border border-gray-700 
+                    <div className={`absolute left-0 top-full mt-5 w-48 bg-[#0B141A]/95 backdrop-blur-md rounded-md shadow-lg border border-gray-700 
                         text-gray-300 transition-all duration-300 origin-top transform z-50
                         ${
                             isDropdownOpen
@@ -50,32 +50,32 @@ function Navbar(){
                         >
                 
                         {/* invisible hover bridge (prevents flicker) */}
-                        <div className="absolute -top-[20px] left-0 w-full h-[20px] bg-transparent"></div>
+                        <div className="absolute -top-5 left-0 w-full h-5 bg-transparent"></div>
 
                         <a
                             href="#web"
-                            className="block flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             Website Development
                         </a>
                     
                         <a
                             href="#mobile"
-                            className="block flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             Mobile Apps Development
                         </a>
                     
                         <a
                             href="#uiux"
-                            className="block flex items-center h-15 px-4 py-2  hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="flex items-center h-15 px-4 py-2  hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             ERP Develpoment
                         </a>
 
                         <a
                             href="#uiux"
-                            className="block flex items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
+                            className="flex items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             IT Consultation
                         </a>

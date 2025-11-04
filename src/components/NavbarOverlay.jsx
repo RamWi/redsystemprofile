@@ -93,7 +93,7 @@ function NavbarOverlay({ isOpen}){
                         </li>
                     </ul>
 
-                    <hr class="border-t-3 border-white-500 w-20 my-5 rounded-full w-80" />
+                    <hr class="border-t-3 border-white-500 my-5 rounded-full w-100" />
 
                     <div className="flex justify-center items-center gap-8 mb-6 text-gray-400">
                         <a
