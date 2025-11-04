@@ -6,6 +6,7 @@ import Header from './components/Header'
 import HeroLand from './components/HeroLand'
 import ServiceSection from './components/ServiceSection'
 import OurProductLand from './components/OurProductLand'
+import ClientLogoSection from './components/ClientLogoSection'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <HeroLand />
         <ServiceSection />
         <OurProductLand />
-        
+        <ClientLogoSection />
       </main>
 
     </>
