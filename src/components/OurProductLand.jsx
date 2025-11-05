@@ -53,9 +53,9 @@ const OurProducts = () => {
                 relative
                 w-[90%]
                 mx-auto
-                h-[85vh]
+                h-[90vh]
                 overflow-y-auto
-                snap-y snap-mandatory
+                snap-y snap-mandatory snap-start
                 scroll-smooth
                 no-scrollbar
                 rounded-xl
@@ -67,12 +67,12 @@ const OurProducts = () => {
                     <div
                         key={item.id}
                         className="
-                        w-full min-h-[70vh]
+                        w-full min-h-[65vh]
                         flex flex-col md:flex-row
                         items-center justify-center
                         gap-10 md:gap-20
                         snap-start
-                        px-3 md:px-9 py-10
+                        px-3 md:px-9 py-6
                         transition-all duration-500
                         "
                     >
@@ -81,7 +81,7 @@ const OurProducts = () => {
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="rounded-xl shadow-lg w-full object-cover"
+                                className="rounded-xl shadow-lg w-full  object-cover"
                             />
                         </div>
 
