@@ -8,6 +8,7 @@ import ServiceSection from './components/ServiceSection'
 import OurProductLand from './components/OurProductLand'
 import ClientLogoSection from './components/ClientLogoSection'
 import PortoLand from './components/PortoLand'
+import TestimonialsLand from './components/TestimonialsLand'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <OurProductLand />
         <ClientLogoSection />
         <PortoLand />
+        <TestimonialsLand />
       </main>
 
     </>
