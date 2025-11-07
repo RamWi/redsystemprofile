@@ -1,4 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
+import teamImage1 from "../assets/teampic1.jpg";
+import teamImage2 from "../assets/teampic2.jpg";
+import teamImage3 from "../assets/teamspic3.jpg";
+import teamImage4 from "../assets/teamspic4.jpg";
+
 
 const testimonials = [
     {
@@ -24,6 +29,8 @@ const testimonials = [
         "Tim RedSystem membantu digitalisasi usaha saya dari nol. Desainnya profesional, komunikasinya cepat, dan hasilnya melampaui ekspektasi.",
     },
 ];
+
+const teamPhotos = [teamImage1, teamImage2, teamImage3, teamImage4];
 
 const TesteimonialsLand = () => {
     const scrollRef = useRef(null);
@@ -73,53 +80,61 @@ const TesteimonialsLand = () => {
                     </p>
                 </div>
 
-                {/* Scroll Snap Container */}
-                <div
-                    ref={scrollRef}
-                    className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar w-full"
-                >
-                    {testimonials.map((item) => (
+                {/* Content wrapper (2 columns layout) */}
+                <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl mx-auto px-6 md:px-16 gap-10">
+                    {/* Left side: Static photo collage */}
+                    <div className="w-full md:w-1/2 grid grid-cols-2 gap-3 md:gap-4">
+                        {teamPhotos.map((photo, index) => (
+                            <div
+                            key={index}
+                            className="relative group overflow-hidden rounded-lg shadow-lg border border-red-500/20"
+                            >
+                                <img
+                                    src={photo}
+                                    alt={`Team ${index + 1}`}
+                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-out"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Right side - testimonials carousel */}
+                    <div className="w-full md:w-1/2 relative">
+                    <div
+                        ref={scrollRef}
+                        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar w-full"
+                    >
+                        {testimonials.map((item) => (
                         <div
                             key={item.id}
-                            className="w-full shrink-0 snap-center flex flex-col md:flex-row items-center justify-center px-8 md:px-24 py-12 gap-10"
+                            className="w-full shrink-0 snap-center flex flex-col justify-center items-center md:items-start text-center md:text-left px-6 py-10 bg-[#111827]/70 rounded-xl shadow-inner shadow-red-500/40 backdrop-blur-md border border-red-500/10"
                         >
-                            {/* Client Image */}
-                            <div className="flex justify-center md:w-1/3">
-                                <img
-                                    src={item.image}
-                                    alt={item.name}
-                                    className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full shadow-lg border-4 border-red-500/80 hover:scale-105 transition-transform duration-300"
-                                />
-                            </div>
-
-                            {/* Testimonial Text */}
-                            <div className="w-full md:w-2/3 text-center md:text-left">
-                                <p className="text-gray-300 text-lg italic mb-6 leading-relaxed">
-                                    “{item.message}”
-                                </p>
-                                <h4 className="text-xl font-semibold text-white">
-                                    {item.name}
-                                </h4>
-                                <p className="text-red-400 text-sm font-medium">
-                                    {item.role}
-                                </p>
-                            </div>
+                            <p className="text-gray-300 text-lg italic mb-6 leading-relaxed">
+                                “{item.message}”
+                            </p>
+                            <h4 className="text-xl font-semibold text-white">
+                                {item.name}
+                            </h4>
+                            <p className="text-red-400 text-sm font-medium">{item.role}</p>
                         </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
 
-                {/* Bullet Indicators */}
-                <div className="flex justify-center mt-10 space-x-3">
-                    {testimonials.map((_, index) => (
-                    <div
-                        key={index}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        current === index
-                            ? "bg-red-500 scale-125 shadow-[0_0_10px_#ff1a1a]"
-                            : "bg-gray-500"
-                        }`}
-                    ></div>
-                    ))}
+                    {/* Bullet Indicators */}
+                    <div className="flex justify-center mt-6 space-x-3">
+                        {testimonials.map((_, index) => (
+                        <div
+                            key={index}
+                            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                            current === index
+                                ? "bg-red-500 scale-125 shadow-[0_0_10px_#ff1a1a]"
+                                : "bg-gray-500"
+                            }`}
+                        ></div>
+                        ))}
+                    </div>
+                    </div>
                 </div>
 
                 {/* Top & bottom red shadow */}
