@@ -1,3 +1,5 @@
+import FooterBottom from "./FooterBottom";
+
 import logo from "../assets/redsystem-logo-white.png";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
@@ -8,7 +10,7 @@ function Footer(){
             <footer className="bg-[#0B141A] text-gray-300 pt-16 pb-10">
                 <div className="max-w-7xl mx-auto px-6 md:px-12">
                     {/* ======= TOP SECTION ======= */}
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12 border-b border-gray-700 pb-6">
                         {/* --- Column 1: Logo & Intro --- */}
                         <div>
                             <img src={logo} alt="R.E.D Group" className="w-40 mb-4" />
@@ -30,10 +32,36 @@ function Footer(){
                                         referrerPolicy="no-referrer-when-downgrade"
                                     ></iframe>
                             </div>
+
+                            <div>
+                                <h4 className="text-white font-semibold mb-2">
+                                    R.E.D Group Main Office
+                                </h4>
+                                <p>
+                                    Jl. Ratna Denpasar No 868, Tonja, Kec. Denpasar Utara, Kota
+                                    Denpasar, Bali
+                                </p>
+                            </div>
+
+                            <ul className="space-y-3 text-sm">
+                                <li className="flex items-center gap-3">
+                                    <FaEnvelope className="text-red-500" />
+                                    <a
+                                    href="mailto:info@redgroup.co.id"
+                                    className="hover:text-white transition"
+                                    >
+                                    info@redgroup.co.id
+                                    </a>
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <FaPhoneAlt className="text-red-500" />
+                                    <span>+62 811-3801-0808</span>
+                                </li>
+                            </ul>
                         </div>
 
                         {/* --- Column 2: Services --- */}
-                        <div>
+                        <div className="md:mx-10">
                             <h3 className="text-white font-semibold mb-4 text-lg">
                                 Our Services
                             </h3>
@@ -58,65 +86,11 @@ function Footer(){
                                 <li>RedPOS</li>
                             </ul>
                         </div>
-
-                        {/* --- Column 4: Inquiry --- */}
-                        <div>
-                            <h3 className="text-white font-semibold mb-4 text-lg">Inquiry</h3>
-                            <ul className="space-y-3 text-sm">
-                                <li className="flex items-center gap-3">
-                                    <FaEnvelope className="text-red-500" />
-                                    <a
-                                    href="mailto:info@redgroup.co.id"
-                                    className="hover:text-white transition"
-                                    >
-                                    info@redgroup.co.id
-                                    </a>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <FaPhoneAlt className="text-red-500" />
-                                    <span>+62 811-3801-0808</span>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
-                    {/* ======= OFFICE LOCATIONS ======= */}
-                    <div className="border-t border-gray-700 pt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-400">
-                        <div>
-                            <h4 className="text-white font-semibold mb-2">
-                                R.E.D Group Main Office
-                            </h4>
-                            <p>
-                                Jl. Ratna Denpasar No 868, Tonja, Kec. Denpasar Utara, Kota
-                                Denpasar, Bali
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 className="text-white font-semibold mb-2">
-                                R.E.D Group Business Hub
-                            </h4>
-                            <p>
-                                Jl. Tukad Aryan I No.1, Sanur, Denpasar Selatan, Kota Denpasar,
-                                Bali
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 className="text-white font-semibold mb-2">
-                                R.E.D Group Business Point Canggu
-                            </h4>
-                            <p>
-                                Pererenan Square No.990, Jl. Raya Canggu, Pererenan, Kec. Mengwi,
-                                Kabupaten Badung, Bali
-                            </p>
-                        </div>
-                    </div>
 
                     {/* ======= COPYRIGHT ======= */}
-                    <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
-                        © {new Date().getFullYear()} R.E.D Group. All Rights Reserved.
-                    </div>
+                    <FooterBottom />
                 </div>
             </footer>
         </>

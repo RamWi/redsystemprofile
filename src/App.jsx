@@ -9,7 +9,7 @@ import OurProductLand from './components/OurProductLand';
 import ClientLogoSection from './components/ClientLogoSection';
 import PortoLand from './components/PortoLand';
 import TestimonialsLand from './components/TestimonialsLand';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 
 function App() {

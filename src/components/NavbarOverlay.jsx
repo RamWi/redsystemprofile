@@ -1,3 +1,5 @@
+import FooterBottom from "./FooterBottom";
+
 import React, { useState } from "react";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub, FaFacebook } from "react-icons/fa";
 
@@ -95,52 +97,9 @@ function NavbarOverlay({ isOpen}){
 
                     <hr class="border-t-3 border-white-500 my-5 rounded-full w-100" />
 
-                    <div className="flex justify-center items-center gap-8 mb-6 text-gray-400">
-                        <a
-                            href="https://instagram.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-pink-500 transition-all duration-300 transform hover:scale-110"
-                        >
-                            <FaInstagram size={24} />
-                        </a>
+                    <FooterBottom className="px-20" />
 
-                        <a
-                            href="https://wa.me/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-green-500 transition-all duration-300 transform hover:scale-110"
-                        >
-                            <FaWhatsapp size={24} />
-                        </a>
-
-                        <a
-                            href="https://linkedin.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-blue-500 transition-all duration-300 transform hover:scale-110"
-                        >
-                            <FaLinkedin size={24} />
-                        </a>
-
-                        <a
-                            href="https://github.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-white transition-all duration-300 transform hover:scale-110"
-                        >
-                            <FaGithub size={24} />
-                        </a>
-
-                        <a
-                            href="https://facebook.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-blue-600 transition-all duration-300 transform hover:scale-110"
-                        >
-                            <FaFacebook size={24} />
-                        </a>
-                        </div>
+                
                 </div>
             )}
     
