@@ -3,32 +3,10 @@ import teamImage1 from "../assets/teampic1.jpg";
 import teamImage2 from "../assets/teampic2.jpg";
 import teamImage3 from "../assets/teamspic3.jpg";
 import teamImage4 from "../assets/teamspic4.jpg";
+import { testimonials } from "./TestiData";
 
 
-const testimonials = [
-    {
-        id: 1,
-        name: "Rini Swari",
-        role: "Founder My Kind of Beauty",
-        message:
-        "Website dari RedSystem memang lain dari pada yang lain, bisnis saya berkembang dan lebih dikenal. Dengan strategi SEO dan tampilan profesional, penjualan meningkat drastis. Mantap!",
 
-    },
-    {
-        id: 2,
-        name: "Made Santara",
-        role: "Direktur Samari Hills Villa",
-        message:
-        "Saya punya bisnis villa, sangat terbantu oleh website RedSystem karena sistem manajemen pemesanannya cepat dan terintegrasi. Sekarang saya bisa fokus ke pelayanan tamu."
-    },
-    {
-        id: 3,
-        name: "Dewi Kartika",
-        role: "CEO Aroma Nusantara",
-        message:
-        "Tim RedSystem membantu digitalisasi usaha saya dari nol. Desainnya profesional, komunikasinya cepat, dan hasilnya melampaui ekspektasi.",
-    },
-];
 
 const teamPhotos = [teamImage1, teamImage2, teamImage3, teamImage4];
 
@@ -71,7 +49,7 @@ const TesteimonialsLand = () => {
         <>
             <section className="w-full py-20 overflow-hidden bg-gradient-to-b from-[#0B141A] via-[#111827] to-[#111111] relative">
                 {/* Title */}
-                <div className="text-center mb-14">
+                <div className="text-center mb-14 px-7">
                     <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wide">
                         WHAT OUR <span className="text-red-500">CLIENTS SAY</span>
                     </h2>

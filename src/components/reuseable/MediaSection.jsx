@@ -2,6 +2,7 @@ import React from "react";
 
 const MediaSection = ({
     image,
+    classImage,
     reverse = false, // kalau true → gambar di kanan, teks di kiri
     children, // seluruh isi teks & komponen dikirim dari luar
 }) => {
@@ -12,11 +13,11 @@ const MediaSection = ({
             } bg-[#0B141A] text-gray-300`}
         >
             {/* Bagian Gambar */}
-            <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full h-full md:w-1/2 flex justify-center">
                 <img
                     src={image}
                     alt="section illustration"
-                    className="rounded-xl shadow-[0_0_25px_rgba(255,0,0,0.25)] w-full max-w-lg object-cover"
+                    className={`rounded-xl shadow-[0_0_25px_rgba(255,0,0,0.25)] w-full ${classImage} max-w-lg object-cover`}
                 />
             </div>
 

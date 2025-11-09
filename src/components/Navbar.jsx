@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 function Navbar(){
@@ -52,33 +53,33 @@ function Navbar(){
                         {/* invisible hover bridge (prevents flicker) */}
                         <div className="absolute -top-5 left-0 w-full h-5 bg-transparent"></div>
 
-                        <a
-                            href="#web"
+                        <Link 
+                            to="/services/web"
                             className="flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             Website Development
-                        </a>
+                        </Link>
                     
-                        <a
-                            href="#mobile"
+                        <Link
+                            to="/services/mobile"
                             className="flex justify-center items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             Mobile Apps Development
-                        </a>
+                        </Link>
                     
-                        <a
-                            href="#uiux"
+                        <Link
+                            to="#uiux"
                             className="flex items-center h-15 px-4 py-2  hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             ERP Develpoment
-                        </a>
+                        </Link>
 
-                        <a
-                            href="#uiux"
+                        <Link
+                            to="#uiux"
                             className="flex items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             IT Consultation
-                        </a>
+                        </Link>
                         
                     </div>
                     )}

@@ -1,7 +1,8 @@
 
+import { Children } from "react";
 import { BsBullseye } from "react-icons/bs";
 
-const CardSection = ({ layout = "vertical", data=[] }) => {
+const CardSection = ({ layout, data=[], children }) => {
     const cards = data.length > 0 ? data : [
     // Default data kalau tidak dikirim dari luar
         { icon: <BsBullseye className="text-red-500 text-2xl" />, title: "Default Card", content: "Default content..." }
@@ -10,11 +11,11 @@ const CardSection = ({ layout = "vertical", data=[] }) => {
     return (
         <section className="w-full bg-[#0B141A] text-gray-200 px-6 md:px-16">
             <div
-            className={`grid ${
-                layout === "vertical"
-                ? "grid-cols-1 gap-8 max-w-3xl mx-auto"
-                : "grid-cols-1 md:grid-cols-4 gap-6"
-            }`}
+                className={`grid ${
+                layout === "horizontal"
+                ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+                : "grid-cols-1 gap-8 max-w-3xl mx-auto"
+                }`}
             >
                 {cards.map((card, index) => (
                     <div
@@ -38,6 +39,7 @@ const CardSection = ({ layout = "vertical", data=[] }) => {
                             {card.content}
                             </p>
                         )}
+                        {children}
                     </div>
                 ))}
             </div>
