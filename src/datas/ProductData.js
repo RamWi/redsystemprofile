@@ -16,6 +16,7 @@ export const products = [
         logo: logoforstaff,
         logoS: "h-14",
         button: "Learn More",
+        link: "https://www.forstaff.id/",
         advantages: [
             {
                 title: "Automated Bookkeeping",
@@ -44,6 +45,7 @@ export const products = [
         logo: logoakunta,
         logoS: "h-16",
         button: "Learn More",
+        link: "https://demo.akunta.co.id/",
         advantages: [
             {
                 title: "Automated Bookkeeping",
@@ -72,6 +74,7 @@ export const products = [
         logo: logoredpos,
         logoS: "h-10",
         button: "Hubungi Kami",
+        link: "https://api.whatsapp.com/send/?phone=6281228663080&text&type=phone_number&app_absent=0",
         advantages: [
             {
                 title: "Automated Bookkeeping",

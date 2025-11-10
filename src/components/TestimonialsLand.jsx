@@ -3,7 +3,7 @@ import teamImage1 from "../assets/teampic1.jpg";
 import teamImage2 from "../assets/teampic2.jpg";
 import teamImage3 from "../assets/teamspic3.jpg";
 import teamImage4 from "../assets/teamspic4.jpg";
-import { testimonials } from "./TestiData";
+import { testimonials } from "../datas/TestiData";
 
 
 
@@ -47,11 +47,11 @@ const TesteimonialsLand = () => {
 
     return (
         <>
-            <section className="w-full py-20 overflow-hidden bg-gradient-to-b from-[#0B141A] via-[#111827] to-[#111111] relative">
+            <section className="w-full py-20 overflow-hidden bg-linear-to-b from-[#0B141A] via-[#111827] to-[#111111] relative">
                 {/* Title */}
                 <div className="text-center mb-14 px-7">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wide">
-                        WHAT OUR <span className="text-red-500">CLIENTS SAY</span>
+                    <h2 className="text-4xl md:text-5xl font-bold text-red-500 tracking-wide">
+                        WHAT OUR <span className="text-white">CLIENTS SAY</span>
                     </h2>
                     <p className="text-gray-400 mt-4 text-sm md:text-base">
                         Real experiences from our happy partners and clients.

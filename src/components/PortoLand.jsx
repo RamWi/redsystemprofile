@@ -1,17 +1,18 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-import { portfolios } from "./PortoData";
+import { portfolios } from "../datas/PortoData";
+import { Link } from "react-router-dom";
 
 function PortoLand(){
 
     return(
         <>
-            <section className="relative w-full bg-[#0B141A] py-16 overflow-hidden animate-pulse">
+            <section id="porto" className="relative w-full bg-[#0B141A] py-16 overflow-hidden animate-pulse">
                 <div className="max-w-7xl mx-auto flex flex-col gap-10 items-center px-6">
                     {/* Title */}
-                    <h3 className="text-white text-2xl md:text-3xl font-semibold text-center mb-4">
-                        Trusted by <span className="text-red-500">Leading Brands</span>
+                    <h3 className="text-red-500 text-2xl md:text-3xl font-semibold text-center mb-4">
+                        Trusted by <span className="text-white">Leading Brands</span>
                     </h3>
 
                     {/* 🔺 TOP MARQUEE (scroll kiri) */}
@@ -56,7 +57,9 @@ function PortoLand(){
                         </Marquee>
                     </div>
 
-                    <button>See more</button>
+                     <Link to="/work" className="self-center px-6 py-2 bg-red-600 hover:bg-red-300 rounded-md text-white transition-all duration-300">
+                        See More
+                    </Link>
                 </div>
             </section>
         </>

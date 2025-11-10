@@ -1,6 +1,6 @@
 import MediaSection from "./MediaSection";
 
-import { products } from "../ProductData";
+import { products } from "../../datas/ProductData";
 
 function ProductList({ filterIds = [], children }){
     
@@ -12,7 +12,7 @@ function ProductList({ filterIds = [], children }){
     return(
         <>
             {filteredProducts.map((item) => (
-                <MediaSection image={item.image} classImage="">
+                <MediaSection image={item.image} key={item.id} classImage="">
                     {/* === Konten Khusus Forstaff (Bagian Kanan) === */}
                     <div className="flex flex-col justify-center text-white">
 

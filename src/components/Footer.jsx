@@ -2,6 +2,7 @@ import FooterBottom from "./FooterBottom";
 
 import logo from "../assets/redsystem-logo-white.png";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 function Footer(){
@@ -19,38 +20,34 @@ function Footer(){
                                 a touch of Bali warmth.
                             </p>
 
-                            {/* Google Map */}
-                            <div className="mt-6 w-full h-40 rounded-lg overflow-hidden border border-red-500/20 shadow-md">
-                                    <iframe
-                                        title="RED Group Location"
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.0880404142127!2d115.22327497481979!3d-8.676942091389914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240b628e0419d%3A0x3d9c3f7c67e7a13a!2sDenpasar%2C%20Bali!5e0!3m2!1sen!2sid!4v1699987688880!5m2!1sen!2sid"
-                                        width="100%"
-                                        height="100%"
-                                        style={{ border: 0 }}
-                                        allowFullScreen=""
-                                        loading="lazy"
-                                        referrerPolicy="no-referrer-when-downgrade"
-                                    ></iframe>
-                            </div>
+                            <a href="https://maps.app.goo.gl/eFEUMqZKCdyxbk8r6" target="_blank">
+                                
+                                {/* Google Map */}
+                                <div className="mt-6 w-full h-50 rounded-lg overflow-hidden border border-red-500/20 shadow-md">
+                    
+                                        <iframe 
+                                        title="RED System Location"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.114228661268!2d115.24586217456857!3d-8.680686288389909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23fae714de88b%3A0x7216cd57648a4f83!2sRED%20SYSTEM%20BALI%20WEBSITE%20DEVELOPER!5e0!3m2!1sid!2sid!4v1762748005573!5m2!1sid!2sid" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
 
-                            <div>
-                                <h4 className="text-white font-semibold mb-2">
-                                    R.E.D Group Main Office
-                                </h4>
-                                <p>
-                                    Jl. Ratna Denpasar No 868, Tonja, Kec. Denpasar Utara, Kota
-                                    Denpasar, Bali
-                                </p>
-                            </div>
+                                <div>
+                                    <h4 className="text-white font-semibold mb-2">
+                                        RED System Office
+                                    </h4>
+                                    <p>
+                                        RED SYSTEM Bali Website Developer, Jl. Tukad Anyar 1 No.1, Sanur, Denpasar Selatan, Kota Denpasar, Bali 80227
+                                    </p>
+                                </div>
+                            </a>
 
-                            <ul className="space-y-3 text-sm">
+                            <ul className="space-y-3 text-sm my-2">
                                 <li className="flex items-center gap-3">
                                     <FaEnvelope className="text-red-500" />
                                     <a
-                                    href="mailto:info@redgroup.co.id"
+                                    href="mailto:info@redsystem.id"
                                     className="hover:text-white transition"
                                     >
-                                    info@redgroup.co.id
+                                        info@redsystem.id
                                     </a>
                                 </li>
                                 <li className="flex items-center gap-3">
@@ -65,13 +62,12 @@ function Footer(){
                             <h3 className="text-white font-semibold mb-4 text-lg">
                                 Our Services
                             </h3>
-                            <ul className="space-y-2 text-sm">
-                                <li>Taxation</li>
-                                <li>Accounting</li>
-                                <li>Legal</li>
-                                <li>Human Resource</li>
-                                <li>IT Systems</li>
-                                <li>Branding & Marketing</li>
+                            <ul className="space-y-2 text-sm w-fit">
+                                <li className="link-nav"> <Link to="services/web">Website Development</Link> </li>
+                                <li className="link-nav"><Link to="services/mobile">Mobile Apps Development</Link></li>
+                                <li className="link-nav"> <Link to="services/erp">ERP Development</Link></li>
+                                <li className="link-nav"> <Link to="services/itconsult">IT Consultation</Link></li>
+
                             </ul>
                         </div>
 
@@ -80,10 +76,10 @@ function Footer(){
                             <h3 className="text-white font-semibold mb-4 text-lg">
                                 Our Products
                             </h3>
-                            <ul className="space-y-2 text-sm">
-                                <li>Forstaff</li>
-                                <li>Akunta</li>
-                                <li>RedPOS</li>
+                            <ul className="space-y-2 text-sm w-fit">
+                                <li className="link-nav"><a href="https://www.forstaff.id/" target="_blank">Forstaff</a></li>
+                                <li className="link-nav"><a href="https://demo.akunta.co.id/" target="_blank">Akunta</a></li>
+                                <li className="link-nav"><a href="https://api.whatsapp.com/send/?phone=6281228663080&text&type=phone_number&app_absent=0" target="_blank">RedPOS</a></li>
                             </ul>
                         </div>
                     </div>

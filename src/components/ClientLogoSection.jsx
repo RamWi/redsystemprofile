@@ -37,7 +37,7 @@ function ClientLogoSection(){
             <section className="relative w-full bg-[#0B141A] py-16 overflow-hidden">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
                     {/* Left Text */}
-                    <div className="md:w-1/3 text-center md:text-left">
+                    <div className="md:w-1/3 text-center md:text-left pl-3">
                         <h3 className="text-white text-xl md:text-2xl font-semibold leading-snug">
                             We work with various top-tier brands <br /> and industry leaders.
                         </h3>
@@ -62,8 +62,8 @@ function ClientLogoSection(){
                 </div>
 
                 {/* Gradient fade kanan & kiri biar elegan */}
-                <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-[#0B141A] via-[#0B141A]/80 to-transparent pointer-events-none" />
-                <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-[#0B141A] via-[#0B141A]/80 to-transparent pointer-events-none" />
+                <div className="absolute top-0 left-0 w-10 h-full bg-linear-to-r from-[#0B141A] via-[#0B141A]/80 to-transparent pointer-events-none" />
+                <div className="absolute top-0 right-0 w-20 h-full bg-linear-to-l from-[#0B141A] via-[#0B141A]/80 to-transparent pointer-events-none" />
             </section>
         </>
     )

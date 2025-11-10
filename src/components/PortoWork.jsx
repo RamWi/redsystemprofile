@@ -1,4 +1,4 @@
-import { portfolios } from "./PortoData"
+import { portfolios } from "../datas/PortoData"
 
 function PortoWork(){
     return(

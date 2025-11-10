@@ -10,9 +10,6 @@ function Navbar(){
             
             {/* CENTER/RIGHT: DESKTOP NAVIGATION LINKS */}
             <nav className="hidden md:flex ml-auto mr-5 space-x-10 text-sm uppercase tracking-wide text-gray-300">
-                <a href="#contact" className="link-nav">
-                Contact
-                </a>
 
                 {/* --- Services Dropdown Wrapper --- */}
                 <div className="relative group"
@@ -20,7 +17,7 @@ function Navbar(){
                     onMouseLeave={() => setIsDropdownOpen(false)}
                 >
                 {/* Main Services Link */}
-                <a href="#services" className="link-nav flex justify-center items-center gap-1">
+                <a href="#services" className="link-nav flex justify-center items-center gap-1 mt-2">
                     Services
                     <svg xmlns="http://www.w3.org/2000/svg"
                         className={`h-4 w-4 transition-transform duration-300 ${
@@ -68,14 +65,14 @@ function Navbar(){
                         </Link>
                     
                         <Link
-                            to="#uiux"
+                            to="/services/erp"
                             className="flex items-center h-15 px-4 py-2  hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             ERP Develpoment
                         </Link>
 
                         <Link
-                            to="#uiux"
+                            to="/services/itconsult"
                             className="flex items-center h-15 px-4 py-2 hover:bg-white/10 hover:text-white transition-all duration-200"
                         >
                             IT Consultation
@@ -85,8 +82,12 @@ function Navbar(){
                     )}
                 </div>
 
-                <a href="#work" className="link-nav">
+                <Link to="/work" className="link-nav mt-2">
                     Work
+                </Link>
+
+                <a href="https://api.whatsapp.com/send/?phone=6281228663080&text&type=phone_number&app_absent=0" target="_blank" className="px-3 py-2 bg-red-600 hover:bg-red-700 rounded-md text-white transition-all duration-300">
+                        Let's Talk
                 </a>
                 
             </nav>

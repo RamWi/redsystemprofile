@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 
 import ProductList from "./reuseable/ProductList";
+import { Link } from "react-router-dom";
 
 
 const OurProducts = () => {
@@ -8,11 +9,11 @@ const OurProducts = () => {
 
     
     return (
-        <section className="relative w-full bg-gradient-to-b from-[#0B141A] via-[#111827] to-[#111111] py-10 md:py-20">
+        <section className="relative w-full bg-linear-to-b from-[#0B141A] via-[#111827] to-[#111111] py-10 md:py-20">
             {/* Title */}
             <div className="text-center mb-8 md:mb-12">
-                <h2 className="text-4xl md:text-5xl font-bold text-white">
-                    OUR <span className="text-red-500">PRODUCTS</span>
+                <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-3">
+                    <span className="text-red-500"> OUR </span> PRODUCTS
                 </h2>
             </div>
 
@@ -34,9 +35,9 @@ const OurProducts = () => {
                 "
             >
                 <ProductList>
-                    <button className="self-center md:self-start flex bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-white transition-all duration-300">
+                    <Link to="/work" className="self-center md:self-start flex bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-white transition-all duration-300">
                         Learn More
-                    </button>
+                    </Link>
                 </ProductList>
             </div>
         

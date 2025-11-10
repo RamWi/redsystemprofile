@@ -53,7 +53,7 @@ function HeroSection({
                     {/* Title */}
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
                         {title.split(" ").map((word, i) =>
-                        word.toLowerCase() === "digital" ? (
+                        word.toLowerCase() === "red" ? (
                             <span key={i} className="text-red-500">
                             {word + " "}
                             </span>

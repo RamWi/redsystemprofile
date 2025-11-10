@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 
-import { products } from "./ProductData";
+import { products } from "../datas/ProductData";
 // Ambil komponen utama kamu (sudah ada logo, phrase, desc, button)
 import ProductList from "./reuseable/ProductList";
 
@@ -39,7 +39,11 @@ function ProductWork(){
                         <SwiperSlide key={item.id}>
                             {/* === Reuse Component ProductList === */}
         
-                            <ProductList filterIds={[item.id]}/>
+                            <ProductList filterIds={[item.id]}>
+                                <a href={item.link} target="_blank" className="self-center md:self-start flex bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-white transition-all duration-300">
+                                    {item.button}
+                                </a>
+                            </ProductList>
                             {/* === Tambahkan Key Advantage Section di bawah === */}
                             <div className="    w-full bg-[#0B141A] py-12 px-6 md:px-20 border-t border-gray-800">
                                 <h3 className="text-xl md:text-2xl font-bold text-red-500 mb-8 text-center md:text-left">

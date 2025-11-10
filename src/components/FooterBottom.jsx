@@ -13,7 +13,7 @@ function FooterBottom({className}){
                 <div className="flex justify-end items-end gap-8 mb-6 text-gray-400">
                     {/* ======= COPYRIGHT ======= */}    
                     <a
-                        href="https://instagram.com/"
+                        href="https://www.instagram.com/red.system/?hl=id"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-pink-500 transition-all duration-300 transform hover:scale-110"
@@ -22,7 +22,7 @@ function FooterBottom({className}){
                     </a>
 
                     <a
-                        href="https://wa.me/"
+                        href="https://api.whatsapp.com/send/?phone=6281228663080&text&type=phone_number&app_absent=0"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-green-500 transition-all duration-300 transform hover:scale-110"
@@ -31,7 +31,7 @@ function FooterBottom({className}){
                     </a>
 
                     <a
-                        href="https://linkedin.com/"
+                        href="https://id.linkedin.com/company/redsystemid"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-500 transition-all duration-300 transform hover:scale-110"
@@ -40,16 +40,7 @@ function FooterBottom({className}){
                     </a>
 
                     <a
-                        href="https://github.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-white transition-all duration-300 transform hover:scale-110"
-                    >
-                        <FaGithub size={24} />
-                    </a>
-
-                    <a
-                        href="https://facebook.com/"
+                        href="https://facebook.com/redsystem.id/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-600 transition-all duration-300 transform hover:scale-110"

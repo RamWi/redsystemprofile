@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import FooterBottom from "./FooterBottom";
 
 import React, { useState } from "react";
-import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub, FaFacebook } from "react-icons/fa";
+
 
 function NavbarOverlay({ isOpen}){
 
@@ -35,12 +36,10 @@ function NavbarOverlay({ isOpen}){
 
                     {/* MAIN MENU LINKS */}
                     <ul className="flex flex-col justify-center items-center flex-1 mt-10 text-3xl font-light space-y-6">
-                        <li className="link-nav cursor-pointer">Home</li>
-                        <li className="link-nav cursor-pointer">About Us</li>
-                        <li className="link-nav cursor-pointer">Work</li>
-                        <li className="link-nav cursor-pointer">Contact</li>
-                        <li className="link-nav cursor-pointer">Testimonials</li>
-                        <li className="link-nav cursor-pointer">Article</li>
+                        <Link to="/" className="link-nav cursor-pointer">Home</Link>
+                        <Link to="/about" className="link-nav cursor-pointer">About Us</Link>
+                        <Link to="/work" className="link-nav cursor-pointer">Work</Link>
+                        <Link to="/testi" className="link-nav cursor-pointer">Testimonials</Link>
                         {/* Dropdown Section */}
                         <li className="relative flex flex-col items-center">
                             {/* Tombol utama Services */}
@@ -77,19 +76,19 @@ function NavbarOverlay({ isOpen}){
                                 }`}
                             >
                                 <div className="grid md:flex grid-cols-2 gap-4 md:grid-cols-none md:gap-8 mt-5 justify-center items-center text-sm uppercase tracking-wider text-gray-400">
-                                    <span className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <Link to="/services/web" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Website 
                                         Development
-                                    </span>
-                                    <span className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    </Link>
+                                    <Link to="/services/mobile" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Mobile Apps Development
-                                    </span>
-                                    <span className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    </Link>
+                                    <Link to="/services/erp" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         ERP Development
-                                    </span>
-                                    <span className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    </Link>
+                                    <Link to="/services/itconsult" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         IT Consultation
-                                    </span>
+                                    </Link>
                                 </div>
                             </div>
                         </li>

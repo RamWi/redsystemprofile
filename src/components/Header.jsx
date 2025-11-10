@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 // Import icons for hamburger (Menu) and close (X)
 import { Menu, X } from "lucide-react";
 import logo from "../assets/redsystem-logo-white.png";
@@ -40,9 +42,9 @@ function Header(){
                 <div className="flex justify-between items-center px-6 md:px-16 py-4">
                 
                     {/* LEFT: LOGO */}
-                    <a href="Home">
+                    <Link to="/">
                         <img src={logo} alt="Red System Logo" className="" />
-                    </a>
+                    </Link>
 
                     {/* CENTER/RIGHT: DESKTOP NAVIGATION LINKS */}
                     <Navbar />

@@ -1,5 +1,3 @@
-
-import { Children } from "react";
 import { BsBullseye } from "react-icons/bs";
 
 const CardSection = ({ layout, data=[], children }) => {
@@ -9,11 +7,11 @@ const CardSection = ({ layout, data=[], children }) => {
     ];
 
     return (
-        <section className="w-full bg-[#0B141A] text-gray-200 px-6 md:px-16">
+        <section className="w-full bg-[#0B141A] text-gray-200 px-6 md:px-16 py-5">
             <div
                 className={`grid ${
                 layout === "horizontal"
-                ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+                ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
                 : "grid-cols-1 gap-8 max-w-3xl mx-auto"
                 }`}
             >
