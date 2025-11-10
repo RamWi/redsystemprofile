@@ -3,7 +3,7 @@ import { portfolios } from "../datas/PortoData"
 function PortoWork(){
     return(
         <>
-            <section className="w-full py-16 md:py-24 bg-[#0B141A] text-gray-300">
+            <section className="w-full py-16 md:py-10 bg-[#0B141A] text-gray-300">
                 {/* Title */}
                 <div className="text-center mb-10 px-4">
                     <h2 className="text-2xl md:text-3xl font-bold text-red-500 mb-2 uppercase">

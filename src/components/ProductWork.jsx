@@ -13,7 +13,7 @@ import ProductList from "./reuseable/ProductList";
 function ProductWork(){
     return(
         <>
-            <section className="relative w-full bg-gradient-to-b from-[#0B141A] via-[#111827] to-[#111111] py-16 md:py-24 overflow-hidden">
+            <section className="relative w-full h-full bg-linear-to-b from-[#0B141A] via-[#111827] to-[#111111] py-1 overflow-hidden">
                 {/* === TITLE === */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -29,11 +29,12 @@ function ProductWork(){
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
                     pagination={{ clickable: true }}
-                    autoplay={{ delay: 6000, disableOnInteraction: false }}
+                    grabCursor={true}
+                    autoplay={{ delay: 20000, disableOnInteraction: true }}
                     loop={true}
                     slidesPerView={1}
                     spaceBetween={50}
-                    className="w-full"
+                    className="w-full h-full"
                 >
                     {products.map((item) => (
                         <SwiperSlide key={item.id}>
@@ -45,7 +46,7 @@ function ProductWork(){
                                 </a>
                             </ProductList>
                             {/* === Tambahkan Key Advantage Section di bawah === */}
-                            <div className="    w-full bg-[#0B141A] py-12 px-6 md:px-20 border-t border-gray-800">
+                            <div className="w-full bg-[#0B141A] py-15 px-6 md:px-20 border-t border-gray-800">
                                 <h3 className="text-xl md:text-2xl font-bold text-red-500 mb-8 text-center md:text-left">
                                     Key Advantages of Using {item.title}
                                 </h3>
@@ -86,6 +87,8 @@ function ProductWork(){
                         .swiper-pagination-bullet {
                             background-color: #666;
                             opacity: 1;
+                            margin: 0;
+                            padding: 0;
                         }
                         .swiper-pagination-bullet-active {
                             background-color: #ff1a1a;
