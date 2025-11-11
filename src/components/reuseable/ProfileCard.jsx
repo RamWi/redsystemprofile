@@ -4,7 +4,7 @@ const ProfileCard = ({
     name = "Nama Lengkap",
     role = "Posisi / Profesi",
     image = "https://images.unsplash.com/photo-1603415526960-f7e0328aab97?auto=format&fit=crop&w=800&q=80",
-    description = "Deskripsi singkat tentang orang ini. Anda dapat menambahkan biografi atau peran dalam perusahaan.",
+    description = "",
     className = "",
 }) => {
     return (
@@ -12,7 +12,7 @@ const ProfileCard = ({
             className={`bg-[#111827] border border-red-500/20 rounded-2xl shadow-[0_0_20px_rgba(255,0,0,0.15)] hover:shadow-[0_0_30px_rgba(255,0,0,0.4)] transition-all duration-500 overflow-hidden text-gray-300 max-w-sm w-full ${className}`}
         >
         {/* Foto Profil */}
-        <div className="w-full h-72 overflow-hidden">
+        <div className="w-full h-130 overflow-hidden">
             <img
                 src={image}
                 alt={name}

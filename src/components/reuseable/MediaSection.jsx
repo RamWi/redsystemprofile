@@ -13,7 +13,7 @@ const MediaSection = ({
             } bg-[#0B141A] text-gray-300`}
         >
             {/* Bagian Gambar */}
-            <div className="w-full h-full md:w-1/2 flex justify-center">
+            <div className="w-full h-full flex justify-center">
                 <img
                     src={image}
                     alt="section illustration"

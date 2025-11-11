@@ -12,7 +12,7 @@ function ProductList({ filterIds = [], children }){
     return(
         <>
             {filteredProducts.map((item) => (
-                <MediaSection image={item.image} key={item.id} classImage="">
+                <MediaSection image={item.image} key={item.id} classImage="w-100">
                     {/* === Konten Khusus Forstaff (Bagian Kanan) === */}
                     <div className="flex flex-col justify-center text-white">
 
@@ -21,7 +21,7 @@ function ProductList({ filterIds = [], children }){
                             {/* Logo */}
                             <img
                                 src={item.logo}
-                                alt="Forstaff Logo"
+                                alt={item.phrase}
                                 className={`${item.logoS} object-contain flex flex-col`}
                             />
 
@@ -35,7 +35,7 @@ function ProductList({ filterIds = [], children }){
                         </div>
 
                         {/* Description */}
-                        <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-6">
+                        <p className="text-gray-400 text-left text-sm justify-center md:text-lg leading-relaxed mb-6">
                             {item.desc}
                         </p>
 

@@ -63,7 +63,7 @@ function ClientLogoSection(){
 
                 {/* Gradient fade kanan & kiri biar elegan */}
                 <div className="absolute top-0 left-0 w-10 h-full bg-linear-to-r from-[#0B141A] via-[#0B141A]/80 to-transparent pointer-events-none" />
-                <div className="absolute top-0 right-0 w-20 h-full bg-linear-to-l from-[#0B141A] via-[#0B141A]/80 to-transparent pointer-events-none" />
+                <div className="absolute top-0 right-0 w-10 h-full bg-linear-to-l from-[#0B141A] via-[#0B141A]/80 to-transparent pointer-events-none" />
             </section>
         </>
     )

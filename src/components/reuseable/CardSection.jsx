@@ -1,6 +1,6 @@
 import { BsBullseye } from "react-icons/bs";
 
-const CardSection = ({ layout, data=[], children }) => {
+const CardSection = ({ layout, data=[], classCard, children }) => {
     const cards = data.length > 0 ? data : [
     // Default data kalau tidak dikirim dari luar
         { icon: <BsBullseye className="text-red-500 text-2xl" />, title: "Default Card", content: "Default content..." }
@@ -18,7 +18,7 @@ const CardSection = ({ layout, data=[], children }) => {
                 {cards.map((card, index) => (
                     <div
                     key={index}
-                    className="bg-[#111827] rounded-xl p-6 shadow-md border border-red-500/10 hover:shadow-[0_0_25px_rgba(255,0,0,0.3)] transition-all duration-300"
+                    className={`bg-[#111827] ${classCard} text-left rounded-xl p-6 shadow-md border border-red-500/10 hover:shadow-[0_0_25px_rgba(255,0,0,0.3)] transition-all duration-300`}
                     >
                         <div className="flex items-center gap-3 mb-3">
                             {card.icon}
@@ -27,7 +27,7 @@ const CardSection = ({ layout, data=[], children }) => {
 
                         {/* Jika ada list, tampilkan poin */}
                         {card.list ? (
-                            <ul className="list-disc list-inside text-gray-400 space-y-2     leading-relaxed">
+                            <ul className="list-disc text-gray-400 text-sm space-y-2 leading-relaxed">
                             {card.list.map((item, i) => (
                                 <li key={i}>{item}</li>
                             ))}
