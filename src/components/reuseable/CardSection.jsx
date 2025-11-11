@@ -27,7 +27,7 @@ const CardSection = ({ layout, data=[], children }) => {
 
                         {/* Jika ada list, tampilkan poin */}
                         {card.list ? (
-                            <ul className="list-disc list-inside text-gray-400 space-y-2 text-sm leading-relaxed">
+                            <ul className="list-disc list-inside text-gray-400 space-y-2     leading-relaxed">
                             {card.list.map((item, i) => (
                                 <li key={i}>{item}</li>
                             ))}

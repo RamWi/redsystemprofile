@@ -6,6 +6,8 @@ import CardSection from "../components/reuseable/CardSection"
 import profile from "../assets/teampic1.jpg"
 import ProfileCard from "../components/reuseable/ProfileCard"
 
+import { companyData } from "../datas/CompanyData"
+
 const team = [
     {
         name: "Kadek Bondan Noviadi",
@@ -33,21 +35,20 @@ function About(){
             <Header />
 
             <MediaSection image={profile}>
-                <div className="w-full md:w-1/2 text-center md:text-left">
+                <div className="text-center md:text-left">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wide">
-                        Judul
+                        A Technology Company Already Established as a Limited Liability Company (PT)
                     </h2>
-                    <p className="text-gray-400 leading-relaxed text-base md:text-lg">
-                        Profile perushaaan
+                    <p className="max-w-5xl text-gray-400 leading-relaxed text-base md:text-lg">
+                        Red System is an “IT Partner & Consultant” company operating under PT. Guna Teknologi Nusantara, headquartered at Jl. Tukad Anyar 1 No.1, Sanur, Denpasar, Bali. Supported by a business team and IT professionals with over 8 years of experience, Red System is ready to be the best choice for business players (individuals or companies) who want to make IT the foundational core and driving force behind their business success.
                     </p>
                 </div>
             </MediaSection>
 
             <CEOMessage />
 
-            <MediaSection image={profile} reverse>
-                <CardSection layout="vertical" />
-                <CardSection layout="vertical" />
+            <MediaSection image={profile} classImage="h-90" reverse>
+                <CardSection layout="vertical" data={companyData} />
             </MediaSection>
 
             <section className="bg-[#0B141A] text-gray-300 py-20 px-6 md:px-16">

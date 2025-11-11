@@ -8,7 +8,7 @@ const MediaSection = ({
 }) => {
     return (
         <section
-            className={`w-full py-20 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center gap-12 ${
+            className={`w-full py-20 px-20 flex flex-col md:flex-row items-center justify-center gap-10 ${
                 reverse ? "md:flex-row-reverse" : ""
             } bg-[#0B141A] text-gray-300`}
         >
@@ -22,7 +22,7 @@ const MediaSection = ({
             </div>
 
             {/* Bagian Konten (children dari luar) */}
-            <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
+            <div className="w-full text-center md:text-left space-y-6">
                 {children}
             </div>
         </section>
