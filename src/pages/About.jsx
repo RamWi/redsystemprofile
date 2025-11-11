@@ -28,7 +28,7 @@ function About(){
             <CEOMessage />
 
             <MediaSection image={profile} classImage="h-40 md:h-90 text-sm" reverse>
-                <CardSection layout="vertical" data={companyData} classCard="w-50" />
+                <CardSection layout="vertical" data={companyData} classCard="sm:w-50 md:w-full" />
             </MediaSection>
 
             <section className="bg-[#0B141A] text-gray-300 py-20 px-6 md:px-16">
