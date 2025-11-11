@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import './App.css';
 
 import Home from "./pages/Home";
-import About from "./pages/about";
+import About from "./pages/About";
 import Work from "./pages/Work";
 import Testimoni from "./pages/Testimoni";
 import PerService from "./components/reuseable/PerService";

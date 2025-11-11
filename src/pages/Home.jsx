@@ -23,7 +23,7 @@ function Home(){
                     subtitle="TOP SOFTWARE DEVELOPER PARTNER TO REACH MORE POTENTIAL CUSTOMERS ONLINE."
                     textPosition="left"
                     buttonPrimary={{ text: "Let's Talk", link: "https://api.whatsapp.com/send/?phone=6281228663080&text&type=phone_number&app_absent=0" }}
-                    buttonSecondary={{ text: "Lihat Portfolio", link: "#porto" }}
+                    buttonSecondary={{ text: "Lihat Portfolio", link: "porto" }}
                 />
                 <ServicesSection />
                 <OurProduct />

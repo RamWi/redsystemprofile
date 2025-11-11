@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-scroll';
+
 
 
 function HeroSection({
@@ -71,12 +73,12 @@ function HeroSection({
 
                     {/* Buttons (optional, appear only if valid) */}
                     {showButtons && (
-                        <div
+                        <Link
                             className={`flex flex-wrap gap-4 ${buttonAlignment} transition-all duration-300`}
                         >
                             {showPrimary && (
                                 <a
-                                    href={buttonPrimary.link}
+                                    href={buttonPrimary.link} target="_blank"
                                     className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-300 text-sm sm:text-base"
                                 >
                                     {buttonPrimary.text}
@@ -84,14 +86,17 @@ function HeroSection({
                             )}
 
                             {showSecondary && (
-                                <a
-                                    href={buttonSecondary.link}
+                                <Link
+                                    to={buttonSecondary.link}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-70}
                                     className="border border-gray-300 text-gray-100 px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white/10 transition-all duration-300 text-sm sm:text-base"
                                 >
                                     {buttonSecondary.text}
-                                </a>
+                                </Link>
                             )}
-                        </div>
+                        </Link>
                     )}
                 </div>
             </div>
