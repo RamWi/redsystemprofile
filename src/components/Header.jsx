@@ -52,7 +52,7 @@ function Header(){
                     {/* RIGHT: MOBILE MENU BUTTON (HAMBURGER ICON) */}
                     <button
                         onClick={() => setIsOpen(!isOpen)} // Toggle menu open/close
-                        className={`link-nav ${isScrolled ? "hover:bg-gray-800" : "hover:bg-gray-50/30"}`}  
+                        className={`link-nav ${isScrolled} "hover:bg-gray-800"`}  
                     >
                         {/* Conditional icon rendering:
                             If menu is open → show X icon

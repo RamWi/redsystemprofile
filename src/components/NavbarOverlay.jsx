@@ -43,8 +43,7 @@ function NavbarOverlay({ isOpen}){
                         {/* Dropdown Section */}
                         <li className="relative flex flex-col items-center">
                             {/* Tombol utama Services */}
-                            <a
-                                href="#services"
+                            <span
                                 onClick={handleServiceClick}
                                 className="link-nav cursor-pointer flex items-center justify-center gap-2"
                             >
@@ -65,7 +64,7 @@ function NavbarOverlay({ isOpen}){
                                         d="M19 9l-7 7-7-7"
                                     />
                                 </svg>
-                            </a>
+                            </span>
 
                             {/* Dropdown muncul di bawah Services */}
                             <div
@@ -76,19 +75,19 @@ function NavbarOverlay({ isOpen}){
                                 }`}
                             >
                                 <div className="grid md:flex grid-cols-2 gap-4 md:grid-cols-none md:gap-8 mt-5 justify-center items-center text-sm uppercase tracking-wider text-gray-400">
-                                    <Link to="/services/web" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <a href="/#/services/web" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Website 
                                         Development
-                                    </Link>
-                                    <Link to="/services/mobile" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    </a>
+                                    <a href="/#/services/mobile" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Mobile Apps Development
-                                    </Link>
-                                    <Link to="/services/erp" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    </a>
+                                    <a href="/#/services/erp" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         ERP Development
-                                    </Link>
-                                    <Link to="/services/itconsult" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    </a>
+                                    <a href="/#/services/itconsult" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         IT Consultation
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </li>

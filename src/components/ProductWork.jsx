@@ -24,66 +24,76 @@ function ProductWork(){
                     </p>
                 </div>
 
-                {/* === SWIPER === */}
-                <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
-                    navigation
-                    pagination={{ clickable: true }}
-                    grabCursor={true}
-                    autoplay={{ delay: 20000, disableOnInteraction: true }}
-                    loop={true}
-                    slidesPerView={1}
-                    spaceBetween={50}
-                    className="w-full h-full"
-                >
-                    {products.map((item) => (
-                        <SwiperSlide key={item.id}>
-                            {/* === Reuse Component ProductList === */}
-        
-                            <ProductList filterIds={[item.id]}>
-                                <a href={item.link} target="_blank" className="self-center md:self-start flex bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-white transition-all duration-300">
-                                    {item.button}
-                                </a>
-                            </ProductList>
-                            {/* === Tambahkan Key Advantage Section di bawah === */}
-                            <div className="w-full bg-[#0B141A] py-15 px-6 md:px-20 border-t border-gray-800">
-                                <h3 className="text-xl md:text-2xl font-bold text-red-500 mb-8 text-center md:text-left">
-                                    Key Advantages of Using {item.title}
-                                </h3>
+                <div className="relative w-full bg-[#0B141A] text-gray-300 py-10 md:py-16 px-6 md:px-16 overflow-hidden">
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300">
-                                    {item.advantages?.map((adv, idx) => (
-                                        <div
-                                            key={idx}
-                                            className="bg-[#111827] rounded-xl p-6 shadow-[0_0_15px_rgba(255,0,0,0.15)] hover:shadow-[0_0_25px_rgba(255,0,0,0.35)] transition-all duration-500"
-                                        >
-                                            <h4 className="text-lg font-semibold text-white mb-2">
-                                                {adv.title}
-                                            </h4>
-                                            <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                                                {adv.desc}
-                                            </p>
-                                        </div>
-                                    ))}
+                    {/* === Custom Top Navigation Buttons === */}
+                    <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+                        <button className="custom-prev bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md shadow-md hover:shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300">
+                        ←
+                        </button>
+                        <button className="custom-next bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md shadow-md hover:shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300">
+                        →
+                        </button>
+                    </div>
+                    {/* === SWIPER === */}
+                    <Swiper
+                        modules={[Navigation, Pagination, Autoplay]}
+                        navigation={{
+                        prevEl: ".custom-prev",
+                        nextEl: ".custom-next",
+                        }}
+                        pagination={{ clickable: true }}
+                        grabCursor={true}
+                        autoplay={{ delay: 20000, disableOnInteraction: true }}
+                        loop={true}
+                        slidesPerView={1}
+                        spaceBetween={50}
+                        className="w-full h-full"
+                    >
+                        {products.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            {/* === Product Section === */}
+                            <ProductList filterIds={[item.id]}>
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="self-center md:self-start flex bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-white transition-all duration-300"
+                            >
+                                {item.button}
+                            </a>
+                            </ProductList>
+
+                            {/* === Key Advantage Section === */}
+                            <div className="w-full bg-[#0B141A] py-14 px-6 md:px-20 border-t border-gray-800">
+                            <h3 className="text-xl md:text-2xl font-bold text-red-500 mb-8 text-center md:text-left">
+                                Key Advantages of Using {item.title}
+                            </h3>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300">
+                                {item.advantages?.map((adv, idx) => (
+                                <div
+                                    key={idx}
+                                    className="bg-[#111827] rounded-xl p-6 shadow-[0_0_15px_rgba(255,0,0,0.15)] hover:shadow-[0_0_25px_rgba(255,0,0,0.35)] transition-all duration-500"
+                                >
+                                    <h4 className="text-lg font-semibold text-white mb-2">
+                                    {adv.title}
+                                    </h4>
+                                    <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                                    {adv.desc}
+                                    </p>
                                 </div>
+                                ))}
                             </div>
-        
+                            </div>
                         </SwiperSlide>
-                    ))}
-                </Swiper>
+                        ))}
+                    </Swiper>
+                </div>
 
                 {/* === CUSTOM SWIPER STYLE === */}
                 <style>
                     {`
-                        .swiper-button-next,
-                        .swiper-button-prev {
-                            color: #ff1a1a;
-                            transition: all 0.3s ease;
-                        }
-                        .swiper-button-next:hover,
-                        .swiper-button-prev:hover {
-                            color: #ffffff;
-                        }
                         .swiper-pagination-bullet {
                             background-color: #666;
                             opacity: 1;

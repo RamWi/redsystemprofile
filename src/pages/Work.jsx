@@ -40,7 +40,7 @@ function Work(){
                         className={`px-5 py-2 rounded-md font-medium transition-all duration-300 border ${
                         activeTab === tab
                             ? "bg-red-600 border-red-500 text-white shadow-[0_0_10px_rgba(255,0,0,0.4)]"
-                            : "border-gray-500 text-gray-400 hover:text-white hover:border-red-400"
+                            : "border-gray-500 bg-transparent text-gray-400 hover:text-white hover:border-red-400"
                         }`}
                     >
                         {tab.charAt(0).toUpperCase() + tab.slice(1)}

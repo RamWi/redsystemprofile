@@ -11,7 +11,7 @@ function ServicesSection() {
                 <h2 className="text-4xl md:text-5xl font-extrabold text-red-500 mb-3">
                     OUR <span className="text-white">SERVICES</span>
                 </h2>
-                <p>
+                <p className="text-white">
                     We help clients speed up market entry, overcome digital challenges, and create their values through specialized services.
                 </p>
             </div>

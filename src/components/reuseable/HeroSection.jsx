@@ -73,7 +73,7 @@ function HeroSection({
 
                     {/* Buttons (optional, appear only if valid) */}
                     {showButtons && (
-                        <Link
+                        <div
                             className={`flex flex-wrap gap-4 ${buttonAlignment} transition-all duration-300`}
                         >
                             {showPrimary && (
@@ -96,7 +96,7 @@ function HeroSection({
                                     {buttonSecondary.text}
                                 </Link>
                             )}
-                        </Link>
+                        </div>
                     )}
                 </div>
             </div>

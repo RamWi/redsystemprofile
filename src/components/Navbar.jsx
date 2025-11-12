@@ -17,7 +17,7 @@ function Navbar(){
                     onMouseLeave={() => setIsDropdownOpen(false)}
                 >
                 {/* Main Services Link */}
-                <a href="#services" className="link-nav flex justify-center items-center gap-1 mt-2">
+                <span className="link-nav flex justify-center items-center gap-1 mt-2">
                     Services
                     <svg xmlns="http://www.w3.org/2000/svg"
                         className={`h-4 w-4 transition-transform duration-300 ${
@@ -34,7 +34,7 @@ function Navbar(){
                             d="M19 9l-7 7-7-7"
                         />
                     </svg>
-                </a>
+                </span>
 
                 {/* --- Dropdown Menu --- */}
                 {isDropdownOpen && (
