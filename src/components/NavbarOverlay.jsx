@@ -22,7 +22,7 @@ function NavbarOverlay({ isOpen}){
         }
 
         // jika sudah pernah klik → arahkan ke halaman services
-        window.location.href = "#services"; // bisa ubah ke link lain
+        // bisa ubah ke link lain
     };
 
 

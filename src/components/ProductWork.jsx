@@ -28,10 +28,10 @@ function ProductWork(){
 
                     {/* === Custom Top Navigation Buttons === */}
                     <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
-                        <button className="custom-prev bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md shadow-md hover:shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300">
+                        <button className="custom-prev bg-red-600 md:hover:bg-red-700 text-white px-3 py-2 rounded-md shadow-md md:hover:shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300">
                         ←
                         </button>
-                        <button className="custom-next bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md shadow-md hover:shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300">
+                        <button className="custom-next bg-red-600 md:hover:bg-red-700 text-white px-3 py-2 rounded-md shadow-md md:hover:shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300">
                         →
                         </button>
                     </div>
