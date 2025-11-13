@@ -75,17 +75,17 @@ function NavbarOverlay({ isOpen}){
                                 }`}
                             >
                                 <div className="grid md:flex grid-cols-2 gap-4 md:grid-cols-none md:gap-8 mt-5 justify-center items-center text-sm uppercase tracking-wider text-gray-400">
-                                    <a href="/#/services/web" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <a href="/redsystemprofile/services/web" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Website 
                                         Development
                                     </a>
-                                    <a href="/#/services/mobile" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <a href="/redsystemprofile/services/mobile" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Mobile Apps Development
                                     </a>
-                                    <a href="/#/services/erp" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <a href="/redsystemprofile/services/erp" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         ERP Development
                                     </a>
-                                    <a href="/#/services/itconsult" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <a href="/redsystemprofile/services/itconsult" className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         IT Consultation
                                     </a>
                                 </div>
