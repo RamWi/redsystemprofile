@@ -37,10 +37,10 @@ function Work(){
                     <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
-                        className={`px-5 py-2 rounded-md font-medium transition-all duration-300 border ${
+                        className={`px-5 py-2 rounded-md font-medium transition-all duration-300 ${
                         activeTab === tab
-                            ? "bg-red-600 border-red-500 text-white shadow-[0_0_10px_rgba(255,0,0,0.4)]"
-                            : "md:border-gray-500 bg-transparent text-gray-400 md:hover:border-red-400"
+                            ? "bg-red-600 border-red-500 text-white"
+                            : "bg-transparent text-gray-400"
                         }`}
                     >
                         {tab.charAt(0).toUpperCase() + tab.slice(1)}

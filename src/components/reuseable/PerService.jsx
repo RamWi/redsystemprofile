@@ -48,7 +48,7 @@ console.log(displayedId);
                 title={heroService.title}
                 subtitle={heroService.subtitle}
                 textPosition="left"
-                buttonPrimary={{ text: "Mulai Project", link: "#project" }}
+                buttonPrimary={{ text: "Book a Meeting", link: "#project" }}
             />
 
               {/* Title Section */}

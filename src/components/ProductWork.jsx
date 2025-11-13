@@ -28,10 +28,10 @@ function ProductWork(){
 
                     {/* === Custom Top Navigation Buttons === */}
                     <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
-                        <button className="custom-prev bg-red-600 text-white px-3 py-2 rounded-md shadow-md transition-all duration-300">
+                        <button className="custom-prev px-6 py-2 bg-red-600 rounded-md text-white transition-all duration-300">
                         ←
                         </button>
-                        <button className="custom-next bg-red-600 text-white px-3 py-2 rounded-md shadow-md transition-all duration-300">
+                        <button className="custom-next px-6 py-2 bg-red-600 rounded-md text-white transition-all duration-300">
                         →
                         </button>
                     </div>

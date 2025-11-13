@@ -75,17 +75,46 @@ function NavbarOverlay({ isOpen}){
                                 }`}
                             >
                                 <div className="grid md:flex grid-cols-2 gap-4 md:grid-cols-none md:gap-8 mt-5 justify-center items-center text-sm uppercase tracking-wider text-gray-400">
-                                    <Link to="/services/web" onClick={() => {window.location.reload();}} className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <Link to="/services/web"  onClick={(e) => {
+                                            e.preventDefault();
+                                            const base =
+                                            window.location.hash.startsWith("#/")
+                                                ? "/#"
+                                                : ""; // deteksi apakah pakai HashRouter
+                                            window.location.href = `${base}/services/web`;
+                                        }} 
+                                        className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Website 
                                         Development
                                     </Link>
-                                    <Link to="/services/mobile" onClick={() => {window.location.reload();}} className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <Link to="/services/mobile" onClick={(e) => {
+                                            e.preventDefault();
+                                            const base =
+                                            window.location.hash.startsWith("#/")
+                                                ? "/#"
+                                                : ""; // deteksi apakah pakai HashRouter
+                                            window.location.href = `${base}/services/mobile`;
+                                        }}  className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         Mobile Apps Development
                                     </Link>
-                                    <Link to="/services/erp" onClick={() => {window.location.reload();}} className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <Link to="/services/erp" onClick={(e) => {
+                                            e.preventDefault();
+                                            const base =
+                                            window.location.hash.startsWith("#/")
+                                                ? "/#"
+                                                : ""; // deteksi apakah pakai HashRouter
+                                            window.location.href = `${base}/services/erp`;
+                                        }}  className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         ERP Development
                                     </Link>
-                                    <Link to="/services/itconsult" onClick={() => {window.location.reload();}} className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
+                                    <Link to="/services/itconsult" onClick={(e) => {
+                                            e.preventDefault();
+                                            const base =
+                                            window.location.hash.startsWith("#/")
+                                                ? "/#"
+                                                : ""; // deteksi apakah pakai HashRouter
+                                            window.location.href = `${base}/services/itconsult`;
+                                        }}  className="link-nav cursor-pointer md:w-25 w-auto mx-5 flex items-center hover:text-white transition-all">
                                         IT Consultation
                                     </Link>
                                 </div>
